@@ -1,0 +1,23 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: pypdfium-reboot
+Upstream-Contact: mara004 <geisserml@gmail.com>
+Source: https://github.com/mara004/pypdfium-reboot
+
+Files: pypdfium/pdfium
+       pypdfium/pdfium.dll
+       pypdfium/pdfium.dylib
+Copyright: PDFium Authors
+License: LicenseRef-PDFium-BSD-3-Clause-or-Apache-2.0
+
+Files: pypdfium/pypdfium.py
+Copyright: Ctypesgen Developers
+License: LicenseRef-Ctypesgen-BSD-2-Clause
+
+Files: README.md
+       MANIFEST.in
+       testfile.pdf
+       pypdfium/pdfium_version.txt
+       .gitignore
+Copyright: 2020 Yinlin Hu
+           2021 mara004
+License: MIT
