@@ -9,7 +9,7 @@ A simple, ctypes-based Python 3 binding to [PDFium](https://opensource.google/pr
 
 If you are looking for a Python PDF rendering library that is not covered by a strong-copyleft license, this is it.
 
-PyPDFium-reboot is the continuation of PyPDFium.
+PyPDFium Reboot is the continuation of PyPDFium.
 
 
 ## Install/Update
