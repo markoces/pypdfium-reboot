@@ -136,8 +136,8 @@ subprocess.run([ctypesgen_command], shell=True)
 shutil.rmtree(thisdirectory+'linux_tar/')
 
 # add and commit to git
-subprocess.run([f'git add {thisdirectory}pypdfium/*'], shell=True)
-subprocess.run([f'git commit -m "[AUTOCOMMIT] run update_bindings.py - version update {str(versionupdate).lower()}"'], shell=True)
+#subprocess.run([f'git add {thisdirectory}pypdfium/*'], shell=True)
+#subprocess.run([f'git commit -m "[AUTOCOMMIT] run update_bindings.py - version update {str(versionupdate).lower()}"'], shell=True)
 
 # build the wheel
 wheel_command = 'python3 setup.py bdist_wheel'

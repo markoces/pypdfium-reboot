@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT
 
 VMAJOR = 0  # changes that break compatibility
-VMINOR = 13  # new features that do not tamper with the API
+VMINOR = 15  # new features that do not tamper with the API
 VPATCH = 0  # bug fixes
 VRC = None  # release candidates (optional)
 

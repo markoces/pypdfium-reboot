@@ -3152,7 +3152,7 @@ if _libs["pdfium"].has("FPDFTextObj_GetFontName", "cdecl"):
 # /home/manuel/projects/pypdfium-reboot/linux_tar/include/fpdf_edit.h: 1223
 if _libs["pdfium"].has("FPDFTextObj_GetText", "cdecl"):
     FPDFTextObj_GetText = _libs["pdfium"].get("FPDFTextObj_GetText", "cdecl")
-    FPDFTextObj_GetText.argtypes = [FPDF_PAGEOBJECT, FPDF_TEXTPAGE, POINTER(None), c_ulong]
+    FPDFTextObj_GetText.argtypes = [FPDF_PAGEOBJECT, FPDF_TEXTPAGE, POINTER(FPDF_WCHAR), c_ulong]
     FPDFTextObj_GetText.restype = c_ulong
 
 # /home/manuel/projects/pypdfium-reboot/linux_tar/include/fpdf_edit.h: 1235
