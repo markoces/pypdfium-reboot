@@ -14,7 +14,6 @@ Copyright: Ctypesgen Developers
 License: LicenseRef-Ctypesgen-BSD-2-Clause
 
 Files: README.md
-       MANIFEST.in
        testfile.pdf
        pypdfium/pdfium_version.txt
        .gitignore
