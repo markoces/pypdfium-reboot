@@ -28,7 +28,7 @@ from PIL import Image
 import ctypes
 import pypdfium as pdfium
 
-# this line is very important, otherwise it won't work
+# initialise the pdfium library (important)
 pdfium.FPDF_InitLibraryWithConfig(pdfium.FPDF_LIBRARY_CONFIG(2, None, None, 0))
 
 if __name__ == "__main__":
@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
     doc = pdfium.FPDF_LoadDocument(fname, None) # load document
     page_count = pdfium.FPDF_GetPageCount(doc)  # get page counts
-    assert page_count >= 1
+    assert(page_count >= 1)
 
     page = pdfium.FPDF_LoadPage(doc, 0) # load the first page
     width = int(pdfium.FPDF_GetPageWidthF(page) + 0.5) # get page width
@@ -66,7 +66,6 @@ if __name__ == "__main__":
     pdfium.FPDF_ClosePage(page)
     
     pdfium.FPDF_CloseDocument(doc)
-
 ```
 
 ## Notes
